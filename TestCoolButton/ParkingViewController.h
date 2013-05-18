@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoolButton.h"
 
 @interface ParkingViewController : UIViewController
+@property (weak, nonatomic) IBOutlet CoolButton *coolButton;
+@property (weak, nonatomic) IBOutlet CoolButton *coolButton2;
 
 @end

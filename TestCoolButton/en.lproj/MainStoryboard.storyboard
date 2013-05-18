@@ -1,26 +1,98 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Parking View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ParkingViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbo-ly-3Kp" customClass="CoolButton">
+                                <color key="backgroundColor" red="0.18234759119999999" green="0.96787958559999998" blue="0.08181875944" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="UkV-Pd-VEe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Testin CoolButton">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYP-1c-DdF" customClass="CoolButton">
+                                <color key="backgroundColor" red="0.18234759119999999" green="0.96787958559999998" blue="0.08181875944" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9BE-lJ-fqB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wo6-6W-jha">
+                                <color key="backgroundColor" red="0.98530910329999999" green="0.0062772302150000004" blue="0.014989401540000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tbo-ly-3Kp" firstAttribute="top" secondItem="3" secondAttribute="top" constant="168" id="9n9-xB-j7U"/>
+                            <constraint firstAttribute="trailing" secondItem="tbo-ly-3Kp" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="EgY-4E-Hpy"/>
+                            <constraint firstItem="QYP-1c-DdF" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="HWL-Ki-Fuy"/>
+                            <constraint firstItem="wo6-6W-jha" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="LD1-mJ-U7C"/>
+                            <constraint firstAttribute="bottom" secondItem="QYP-1c-DdF" secondAttribute="bottom" constant="188" id="M9m-Hl-DI9"/>
+                            <constraint firstAttribute="bottom" secondItem="wo6-6W-jha" secondAttribute="bottom" constant="123" id="PER-Du-HB6"/>
+                            <constraint firstItem="tbo-ly-3Kp" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="SJd-6n-00I"/>
+                            <constraint firstAttribute="trailing" secondItem="QYP-1c-DdF" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="t9D-cO-5TJ"/>
+                            <constraint firstAttribute="trailing" secondItem="wo6-6W-jha" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="xwg-ED-iZm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="coolButton" destination="tbo-ly-3Kp" id="bzN-Xs-h0x"/>
+                        <outlet property="coolButton2" destination="QYP-1c-DdF" id="Zuc-ud-NVx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="84" y="81"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="CoolButton" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoolButton.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ParkingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ParkingViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="coolButton" candidateClass="CoolButton"/>
+                <relationship kind="outlet" name="coolButton2" candidateClass="CoolButton"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
