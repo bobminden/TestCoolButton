@@ -56,6 +56,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mer-MY-K1N">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -67,6 +72,8 @@
                             <constraint firstItem="Dex-MQ-eOA" firstAttribute="centerX" secondItem="tbo-ly-3Kp" secondAttribute="centerX" type="default" id="OOm-Ol-zl9"/>
                             <constraint firstAttribute="bottom" secondItem="wo6-6W-jha" secondAttribute="bottom" constant="123" id="PER-Du-HB6"/>
                             <constraint firstItem="tbo-ly-3Kp" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="SJd-6n-00I"/>
+                            <constraint firstAttribute="bottom" secondItem="Mer-MY-K1N" secondAttribute="bottom" constant="42" id="VCo-fy-yVh"/>
+                            <constraint firstItem="Mer-MY-K1N" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="124" id="f4t-QY-CnU"/>
                             <constraint firstItem="Dex-MQ-eOA" firstAttribute="top" secondItem="3" secondAttribute="top" constant="109" id="gQ6-u0-LpE"/>
                             <constraint firstAttribute="trailing" secondItem="QYP-1c-DdF" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="t9D-cO-5TJ"/>
                             <constraint firstAttribute="trailing" secondItem="wo6-6W-jha" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="xwg-ED-iZm"/>
